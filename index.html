@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karam AL-Omari - SID: 155726</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #1a1a1a;
+            --text-color: #ffffff;
+            --accent-color: #61dafb;
+            --secondary-color: #282c34;
+            --hover-color: #3a3f4b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        header {
+            background: var(--secondary-color);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            padding: 100px 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--secondary-color);
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--secondary-color);
+        }
+
+        th {
+            background-color: var(--secondary-color);
+            color: var(--accent-color);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: var(--text-color);
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: var(--accent-color);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-in {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        /* New styles for centralized home section */
+/* New styles for centralized home section */
+        #home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            text-align: center;
+            background-color: var(--bg-color); /* Optional for the background of the section */
+        }
+
+        #home .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 15px; /* Adds spacing between elements */
+        }
+
+        #home img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h1>Karam AL-Omari</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container animate-in">
+            <img src="/karam.jpg" alt="karam">
+            <h1>Karam AL-Omari</h1>
+            <p>Major: Cyber Security</p>
+            <p>Student ID: 155726</p>
+
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container animate-in">
+            <h2>Soft Skills</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3><i class="fas fa-comments"></i> Communication</h3>
+                    <p>Excellent verbal and written communication skills.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-puzzle-piece"></i> Problem-solving</h3>
+                    <p>Analytical thinker with strong problem-solving abilities.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-users"></i> Teamwork</h3>
+                    <p>Collaborative team player with leadership potential.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-sync-alt"></i> Adaptability</h3>
+                    <p>Quick learner, adaptable to new technologies and situations.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-sync-alt"></i> Leadership</h3>
+                    <p>A passionate cybersecurity student, mentor, curious, driven, skilled, innovative, collaborative, and constantly learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="languages">
+        <div class="container animate-in">
+            <h2>Favorite Programming Languages</h2>
+            <table>
+                <tr>
+                    <th>Language</th>
+                    <th>Proficiency</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Advanced</td>
+                    <td><a href="https://www.python.org/" target="_blank">Learn more</a></td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Intermediate</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Learn more</a></td>
+                </tr>
+                <tr>
+                    <td>c++</td>
+                    <td>Advanced</td>
+                    <td><a href="https://ar.wikipedia.org/wiki/سي%2B%2B" target="_blank">Learn more</a></td>
+                </tr>
+                <tr>
+                    <td>html</td>
+                    <td>Advanced</td>
+                    <td><a href="https://html.com" target="_blank">Learn more</a></td>
+                </tr>
+                <tr>
+                    <td>css</td>
+                    <td>Advanced</td>
+                    <td><a href="https://en.wikipedia.org/wiki/CSS" target="_blank">Learn more</a></td>
+                </tr>
+                <tr>
+                    <td>assembly</td>
+                    <td>Advanced</td>
+                    <td><a href="https://en.wikipedia.org/wiki/Assembly_language" target="_blank">Learn more</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
